@@ -31,7 +31,7 @@ int		main()
 	char c[] = "Coucou\ntu vas bien ?";
 	ft_putstr("Coucou\\0atu vas bien ?:");
 	ft_putstr_non_printable(c);
-	char d[] = "\x81\xbe";
-	ft_putstr("\n\\81\\be:");
+	char d[] = "\a\b\t\n\v\f\r\0";
+	ft_putstr("\07\08\09\0a\0b\0c\0d:");
 	ft_putstr_non_printable(d);
 }
